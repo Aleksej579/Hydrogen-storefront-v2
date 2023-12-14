@@ -44,7 +44,7 @@ export default function Article() {
   }).format(new Date(article.publishedAt));
 
   return (
-    <div className="article">
+    <div className="article mt-6">
       <h1>
         {title}
         <span>
