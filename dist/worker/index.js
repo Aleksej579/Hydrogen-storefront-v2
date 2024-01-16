@@ -18622,8 +18622,8 @@ function getStorefrontHeaders(request) {
   };
 }
 
-// public/favicon.svg
-var favicon_default = "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_assets/favicon-5FIZBM2K.svg";
+// public/favicon.ico
+var favicon_default = "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_assets/favicon-UY3DMFQ6.ico";
 
 // app/styles/reset.css
 var reset_default = "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_assets/reset-UDQ3NSVJ.css";
@@ -25481,41 +25481,51 @@ function Homepage() {
 }
 function AllCollections() {
   let { allCollections } = useLoaderData2(), allCollectionsArr = allCollections.collections.nodes;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("ul", { className: "all_collections flex gap-4 mb-8", children: allCollectionsArr.map((collection) => /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("li", { className: "relative border aspect-square h-fit w-1/4 mb-0 group", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h1", { className: "absolute top-1/2 left-1/2 m-0 text-white -translate-y-2/4 -translate-x-2/4 text-base z-[1] group-hover:text-black", children: collection.title }, void 0, !1, {
-      fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 45,
-      columnNumber: 11
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
-      Link2,
-      {
-        className: "",
-        to: `/collections/${collection.handle}`,
-        children: collection.image && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "aspect-square group-hover:opacity-50", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Image, { data: collection.image, sizes: "100vw", className: "!aspect-square" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("ul", { className: "all_collections flex gap-4 mb-8", children: allCollectionsArr.map((collection) => /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
+    "li",
+    {
+      className: "relative border aspect-square h-fit w-1/4 mb-0 group",
+      children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h1", { className: "absolute top-1/2 left-1/2 m-0 text-white -translate-y-2/4 -translate-x-2/4 text-base z-[1] group-hover:text-black", children: collection.title }, void 0, !1, {
           fileName: "app/routes/($locale)._index.jsx",
-          lineNumber: 52,
-          columnNumber: 17
+          lineNumber: 48,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Link2, { className: "", to: `/collections/${collection.handle}`, children: collection.image && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "aspect-square group-hover:opacity-50", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
+          Image,
+          {
+            data: collection.image,
+            sizes: "100vw",
+            className: "!aspect-square"
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/routes/($locale)._index.jsx",
+            lineNumber: 54,
+            columnNumber: 17
+          },
+          this
+        ) }, void 0, !1, {
+          fileName: "app/routes/($locale)._index.jsx",
+          lineNumber: 53,
+          columnNumber: 15
         }, this) }, void 0, !1, {
           fileName: "app/routes/($locale)._index.jsx",
           lineNumber: 51,
-          columnNumber: 15
+          columnNumber: 11
         }, this)
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/routes/($locale)._index.jsx",
-        lineNumber: 46,
-        columnNumber: 11
-      },
-      this
-    )
-  ] }, collection.id, !0, {
-    fileName: "app/routes/($locale)._index.jsx",
-    lineNumber: 44,
-    columnNumber: 9
-  }, this)) }, void 0, !1, {
+      ]
+    },
+    collection.id,
+    !0,
+    {
+      fileName: "app/routes/($locale)._index.jsx",
+      lineNumber: 44,
+      columnNumber: 9
+    },
+    this
+  )) }, void 0, !1, {
     fileName: "app/routes/($locale)._index.jsx",
     lineNumber: 42,
     columnNumber: 5
@@ -25531,16 +25541,16 @@ function FeaturedCollection({ collection }) {
       children: [
         image && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "featured-collection-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Image, { data: image, sizes: "100vw" }, void 0, !1, {
           fileName: "app/routes/($locale)._index.jsx",
-          lineNumber: 71,
+          lineNumber: 77,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/routes/($locale)._index.jsx",
-          lineNumber: 70,
+          lineNumber: 76,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h1", { className: "absolute top-1/2 left-1/2 m-0 text-[#17224F]/[.5] -translate-y-2/4 -translate-x-2/4 text-4xl", children: collection.title }, void 0, !1, {
           fileName: "app/routes/($locale)._index.jsx",
-          lineNumber: 74,
+          lineNumber: 80,
           columnNumber: 7
         }, this)
       ]
@@ -25549,7 +25559,7 @@ function FeaturedCollection({ collection }) {
     !0,
     {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 65,
+      lineNumber: 71,
       columnNumber: 5
     },
     this
@@ -25559,12 +25569,12 @@ function RecommendedProducts({ products }) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "recommended-products", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h2", { children: "Recommended Products" }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 82,
+      lineNumber: 88,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(import_react38.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { children: "Loading..." }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 83,
+      lineNumber: 89,
       columnNumber: 27
     }, this), children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Await2, { resolve: products, children: ({ products: products2 }) => /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "recommended-products-grid", children: products2.nodes.map((product) => /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
       Link2,
@@ -25583,23 +25593,23 @@ function RecommendedProducts({ products }) {
             !1,
             {
               fileName: "app/routes/($locale)._index.jsx",
-              lineNumber: 93,
+              lineNumber: 99,
               columnNumber: 19
             },
             this
           ),
           /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h4", { children: product.title }, void 0, !1, {
             fileName: "app/routes/($locale)._index.jsx",
-            lineNumber: 98,
+            lineNumber: 104,
             columnNumber: 19
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("small", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Money, { data: product.priceRange.minVariantPrice }, void 0, !1, {
             fileName: "app/routes/($locale)._index.jsx",
-            lineNumber: 100,
+            lineNumber: 106,
             columnNumber: 21
           }, this) }, void 0, !1, {
             fileName: "app/routes/($locale)._index.jsx",
-            lineNumber: 99,
+            lineNumber: 105,
             columnNumber: 19
           }, this)
         ]
@@ -25608,31 +25618,31 @@ function RecommendedProducts({ products }) {
       !0,
       {
         fileName: "app/routes/($locale)._index.jsx",
-        lineNumber: 88,
+        lineNumber: 94,
         columnNumber: 17
       },
       this
     )) }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 86,
+      lineNumber: 92,
       columnNumber: 13
     }, this) }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 84,
+      lineNumber: 90,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 83,
+      lineNumber: 89,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("br", {}, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 108,
+      lineNumber: 114,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/($locale)._index.jsx",
-    lineNumber: 81,
+    lineNumber: 87,
     columnNumber: 5
   }, this);
 }
@@ -25640,7 +25650,7 @@ function ProductLeftRightImage({ products }) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "mb-12", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(import_react38.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { children: "Loading..." }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 116,
+      lineNumber: 122,
       columnNumber: 27
     }, this), children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Await2, { resolve: products, children: ({ products: products2 }) => /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { children: products2.nodes.map((product) => /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
       Link2,
@@ -25660,14 +25670,14 @@ function ProductLeftRightImage({ products }) {
             !1,
             {
               fileName: "app/routes/($locale)._index.jsx",
-              lineNumber: 126,
+              lineNumber: 132,
               columnNumber: 19
             },
             this
           ),
           /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h4", { className: "!w-1/2 bg-black text-white flex items-center p-5 m-0", children: product.description }, void 0, !1, {
             fileName: "app/routes/($locale)._index.jsx",
-            lineNumber: 132,
+            lineNumber: 138,
             columnNumber: 19
           }, this)
         ]
@@ -25676,31 +25686,31 @@ function ProductLeftRightImage({ products }) {
       !0,
       {
         fileName: "app/routes/($locale)._index.jsx",
-        lineNumber: 121,
+        lineNumber: 127,
         columnNumber: 17
       },
       this
     )) }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 119,
+      lineNumber: 125,
       columnNumber: 13
     }, this) }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 117,
+      lineNumber: 123,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 116,
+      lineNumber: 122,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("br", {}, void 0, !1, {
       fileName: "app/routes/($locale)._index.jsx",
-      lineNumber: 139,
+      lineNumber: 145,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/($locale)._index.jsx",
-    lineNumber: 115,
+    lineNumber: 121,
     columnNumber: 5
   }, this);
 }
@@ -27453,7 +27463,7 @@ var LAYOUT_QUERY = `#graphql
 `;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/entry.client-UQH6RKIL.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-KP76AK6U.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-QHA57KLM.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-LEC4TUWW.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-X5N6I3H5.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-GSFMRAPZ.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-SI57YLV3.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-P5MQTD6C.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-SVHZQSAC.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/root-72WFMVXP.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-Z7UH7FUU.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-CGU22PE2.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-F7FELMTO.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !0 }, "routes/($locale).$": { id: "routes/($locale).$", parentId: "root", path: ":locale?/*", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).$-Z63NXLNH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).[sitemap.xml]": { id: "routes/($locale).[sitemap.xml]", parentId: "root", path: ":locale?/sitemap.xml", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).[sitemap.xml]-C6ABQDOH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale)._index": { id: "routes/($locale)._index", parentId: "root", path: ":locale?", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale)._index-XGON3SQY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account": { id: "routes/($locale).account", parentId: "root", path: ":locale?/account", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account-JQIFV72X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.$": { id: "routes/($locale).account.$", parentId: "routes/($locale).account", path: "*", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.$-K257XSPR.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.addresses": { id: "routes/($locale).account.addresses", parentId: "routes/($locale).account", path: "addresses", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.addresses-C6ZZ3N4X.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.orders.$id": { id: "routes/($locale).account.orders.$id", parentId: "routes/($locale).account", path: "orders/:id", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.orders.$id-ZAWHLTDD.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.orders._index": { id: "routes/($locale).account.orders._index", parentId: "routes/($locale).account", path: "orders", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.orders._index-FHQ7XGPB.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.profile": { id: "routes/($locale).account.profile", parentId: "routes/($locale).account", path: "profile", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.profile-HIKJHE4T.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.activate.$id.$activationToken": { id: "routes/($locale).account_.activate.$id.$activationToken", parentId: "root", path: ":locale?/account/activate/:id/:activationToken", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.activate.$id.$activationToken-RXG6EDQD.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.login": { id: "routes/($locale).account_.login", parentId: "root", path: ":locale?/account/login", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.login-XR2QA5FO.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.logout": { id: "routes/($locale).account_.logout", parentId: "root", path: ":locale?/account/logout", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.logout-RIPHQTW4.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.recover": { id: "routes/($locale).account_.recover", parentId: "root", path: ":locale?/account/recover", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.recover-LZVCSIIV.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.register": { id: "routes/($locale).account_.register", parentId: "root", path: ":locale?/account/register", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.register-OEUKAPM3.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.reset.$id.$resetToken": { id: "routes/($locale).account_.reset.$id.$resetToken", parentId: "root", path: ":locale?/account/reset/:id/:resetToken", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.reset.$id.$resetToken-EOHESW4H.js", imports: void 0, hasAction: !0, hasLoader: !1, hasErrorBoundary: !1 }, "routes/($locale).api.predictive-search": { id: "routes/($locale).api.predictive-search", parentId: "root", path: ":locale?/api/predictive-search", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).api.predictive-search-JGWRN7AW.js", imports: void 0, hasAction: !0, hasLoader: !1, hasErrorBoundary: !1 }, "routes/($locale).blogs.$blogHandle.$articleHandle": { id: "routes/($locale).blogs.$blogHandle.$articleHandle", parentId: "root", path: ":locale?/blogs/:blogHandle/:articleHandle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).blogs.$blogHandle.$articleHandle-WQLBIGCY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).blogs.$blogHandle._index": { id: "routes/($locale).blogs.$blogHandle._index", parentId: "root", path: ":locale?/blogs/:blogHandle", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).blogs.$blogHandle._index-GT5BBFA7.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).blogs._index": { id: "routes/($locale).blogs._index", parentId: "root", path: ":locale?/blogs", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).blogs._index-KFJ7MOHH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).cart": { id: "routes/($locale).cart", parentId: "root", path: ":locale?/cart", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).cart-PZIIWPTS.js", imports: void 0, hasAction: !0, hasLoader: !1, hasErrorBoundary: !1 }, "routes/($locale).cart.$lines": { id: "routes/($locale).cart.$lines", parentId: "routes/($locale).cart", path: ":lines", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).cart.$lines-CE2AWG26.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).collections.$handle": { id: "routes/($locale).collections.$handle", parentId: "root", path: ":locale?/collections/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).collections.$handle-F5XGJX46.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).collections._index": { id: "routes/($locale).collections._index", parentId: "root", path: ":locale?/collections", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).collections._index-J63COXYN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).discount.$code": { id: "routes/($locale).discount.$code", parentId: "root", path: ":locale?/discount/:code", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).discount.$code-SF7NVHAH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).pages.$handle": { id: "routes/($locale).pages.$handle", parentId: "root", path: ":locale?/pages/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).pages.$handle-TRGRD3C4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).policies.$handle": { id: "routes/($locale).policies.$handle", parentId: "root", path: ":locale?/policies/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).policies.$handle-2ANSBYWQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).policies._index": { id: "routes/($locale).policies._index", parentId: "root", path: ":locale?/policies", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).policies._index-WY67GATS.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).products.$handle": { id: "routes/($locale).products.$handle", parentId: "root", path: ":locale?/products/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).products.$handle-YSBPRXF5.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).search": { id: "routes/($locale).search", parentId: "root", path: ":locale?/search", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).search-75SU3RU4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/[robots.txt]": { id: "routes/[robots.txt]", parentId: "root", path: "robots.txt", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/[robots.txt]-2S5H7FFW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "virtual-routes/routes/debug-network": { id: "virtual-routes/routes/debug-network", parentId: "virtual-routes/virtual-root", path: "debug-network", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/routes/debug-network-3ISREQ5T.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "virtual-routes/routes/graphiql": { id: "virtual-routes/routes/graphiql", parentId: "virtual-routes/virtual-root", path: "graphiql", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/routes/graphiql-QEC7YPEM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "virtual-routes/routes/index": { id: "virtual-routes/routes/index", parentId: "virtual-routes/virtual-root", path: void 0, index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/routes/index-PTHACXBP.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !0 }, "virtual-routes/virtual-root": { id: "virtual-routes/virtual-root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/virtual-root-NSL4IKHI.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-A4EUSYOS.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !0 } }, version: "dcf96242", hmr: { runtime: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-SI57YLV3.js", timestamp: 1702557710218 }, url: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/manifest-DCF96242.js" };
+var assets_manifest_default = { entry: { module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/entry.client-UQH6RKIL.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-KP76AK6U.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-QHA57KLM.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-LEC4TUWW.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-X5N6I3H5.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-GSFMRAPZ.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-SI57YLV3.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-P5MQTD6C.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-SVHZQSAC.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/root-RYNQI457.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-5BI27IVH.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-CGU22PE2.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-F7FELMTO.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !0 }, "routes/($locale).$": { id: "routes/($locale).$", parentId: "root", path: ":locale?/*", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).$-Z63NXLNH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).[sitemap.xml]": { id: "routes/($locale).[sitemap.xml]", parentId: "root", path: ":locale?/sitemap.xml", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).[sitemap.xml]-C6ABQDOH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale)._index": { id: "routes/($locale)._index", parentId: "root", path: ":locale?", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale)._index-XXSIMYH2.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account": { id: "routes/($locale).account", parentId: "root", path: ":locale?/account", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account-JQIFV72X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.$": { id: "routes/($locale).account.$", parentId: "routes/($locale).account", path: "*", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.$-K257XSPR.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.addresses": { id: "routes/($locale).account.addresses", parentId: "routes/($locale).account", path: "addresses", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.addresses-C6ZZ3N4X.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.orders.$id": { id: "routes/($locale).account.orders.$id", parentId: "routes/($locale).account", path: "orders/:id", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.orders.$id-ZAWHLTDD.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.orders._index": { id: "routes/($locale).account.orders._index", parentId: "routes/($locale).account", path: "orders", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.orders._index-FHQ7XGPB.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account.profile": { id: "routes/($locale).account.profile", parentId: "routes/($locale).account", path: "profile", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account.profile-HIKJHE4T.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.activate.$id.$activationToken": { id: "routes/($locale).account_.activate.$id.$activationToken", parentId: "root", path: ":locale?/account/activate/:id/:activationToken", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.activate.$id.$activationToken-RXG6EDQD.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.login": { id: "routes/($locale).account_.login", parentId: "root", path: ":locale?/account/login", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.login-XR2QA5FO.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.logout": { id: "routes/($locale).account_.logout", parentId: "root", path: ":locale?/account/logout", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.logout-RIPHQTW4.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.recover": { id: "routes/($locale).account_.recover", parentId: "root", path: ":locale?/account/recover", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.recover-LZVCSIIV.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.register": { id: "routes/($locale).account_.register", parentId: "root", path: ":locale?/account/register", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.register-OEUKAPM3.js", imports: void 0, hasAction: !0, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).account_.reset.$id.$resetToken": { id: "routes/($locale).account_.reset.$id.$resetToken", parentId: "root", path: ":locale?/account/reset/:id/:resetToken", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).account_.reset.$id.$resetToken-EOHESW4H.js", imports: void 0, hasAction: !0, hasLoader: !1, hasErrorBoundary: !1 }, "routes/($locale).api.predictive-search": { id: "routes/($locale).api.predictive-search", parentId: "root", path: ":locale?/api/predictive-search", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).api.predictive-search-JGWRN7AW.js", imports: void 0, hasAction: !0, hasLoader: !1, hasErrorBoundary: !1 }, "routes/($locale).blogs.$blogHandle.$articleHandle": { id: "routes/($locale).blogs.$blogHandle.$articleHandle", parentId: "root", path: ":locale?/blogs/:blogHandle/:articleHandle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).blogs.$blogHandle.$articleHandle-WQLBIGCY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).blogs.$blogHandle._index": { id: "routes/($locale).blogs.$blogHandle._index", parentId: "root", path: ":locale?/blogs/:blogHandle", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).blogs.$blogHandle._index-GT5BBFA7.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).blogs._index": { id: "routes/($locale).blogs._index", parentId: "root", path: ":locale?/blogs", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).blogs._index-KFJ7MOHH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).cart": { id: "routes/($locale).cart", parentId: "root", path: ":locale?/cart", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).cart-U7NG7YQG.js", imports: void 0, hasAction: !0, hasLoader: !1, hasErrorBoundary: !1 }, "routes/($locale).cart.$lines": { id: "routes/($locale).cart.$lines", parentId: "routes/($locale).cart", path: ":lines", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).cart.$lines-CE2AWG26.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).collections.$handle": { id: "routes/($locale).collections.$handle", parentId: "root", path: ":locale?/collections/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).collections.$handle-F5XGJX46.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).collections._index": { id: "routes/($locale).collections._index", parentId: "root", path: ":locale?/collections", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).collections._index-J63COXYN.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).discount.$code": { id: "routes/($locale).discount.$code", parentId: "root", path: ":locale?/discount/:code", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).discount.$code-SF7NVHAH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).pages.$handle": { id: "routes/($locale).pages.$handle", parentId: "root", path: ":locale?/pages/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).pages.$handle-TRGRD3C4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).policies.$handle": { id: "routes/($locale).policies.$handle", parentId: "root", path: ":locale?/policies/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).policies.$handle-2ANSBYWQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).policies._index": { id: "routes/($locale).policies._index", parentId: "root", path: ":locale?/policies", index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).policies._index-WY67GATS.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).products.$handle": { id: "routes/($locale).products.$handle", parentId: "root", path: ":locale?/products/:handle", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).products.$handle-YSBPRXF5.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/($locale).search": { id: "routes/($locale).search", parentId: "root", path: ":locale?/search", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/($locale).search-75SU3RU4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "routes/[robots.txt]": { id: "routes/[robots.txt]", parentId: "root", path: "robots.txt", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/routes/[robots.txt]-2S5H7FFW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "virtual-routes/routes/debug-network": { id: "virtual-routes/routes/debug-network", parentId: "virtual-routes/virtual-root", path: "debug-network", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/routes/debug-network-3ISREQ5T.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "virtual-routes/routes/graphiql": { id: "virtual-routes/routes/graphiql", parentId: "virtual-routes/virtual-root", path: "graphiql", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/routes/graphiql-QEC7YPEM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !1 }, "virtual-routes/routes/index": { id: "virtual-routes/routes/index", parentId: "virtual-routes/virtual-root", path: void 0, index: !0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/routes/index-PTHACXBP.js", imports: void 0, hasAction: !1, hasLoader: !0, hasErrorBoundary: !0 }, "virtual-routes/virtual-root": { id: "virtual-routes/virtual-root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/virtual-routes/virtual-root-NSL4IKHI.js", imports: ["http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-A4EUSYOS.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-JGA3I4LR.js", "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-VI4NOKQS.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !0 } }, version: "1b9c16a9", hmr: { runtime: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/_shared/chunk-SI57YLV3.js", timestamp: 1702567274305 }, url: "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/manifest-1B9C16A9.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "dist/client/build", future = {}, publicPath = "http://localhost:3100/mini-oxygen/00000/11111/22222/33333/build/", entry = { module: entry_server_exports }, routes = {

@@ -39,17 +39,23 @@ function AllCollections() {
   const allCollectionsArr = allCollections.collections.nodes;
 
   return (
-    <ul className ='all_collections flex gap-4 mb-8'>
+    <ul className="all_collections flex gap-4 mb-8">
       {allCollectionsArr.map((collection) => (
-        <li className='relative border aspect-square h-fit w-1/4 mb-0 group' key={collection.id}>
-          <h1 className='absolute top-1/2 left-1/2 m-0 text-white -translate-y-2/4 -translate-x-2/4 text-base z-[1] group-hover:text-black'>{collection.title}</h1>
-          <Link
-            className=""
-            to={`/collections/${collection.handle}`}
-          >
+        <li
+          className="relative border aspect-square h-fit w-1/4 mb-0 group"
+          key={collection.id}
+        >
+          <h1 className="absolute top-1/2 left-1/2 m-0 text-white -translate-y-2/4 -translate-x-2/4 text-base z-[1] group-hover:text-black">
+            {collection.title}
+          </h1>
+          <Link className="" to={`/collections/${collection.handle}`}>
             {collection.image && (
               <div className="aspect-square group-hover:opacity-50">
-                <Image data={collection.image} sizes="100vw" className='!aspect-square' />
+                <Image
+                  data={collection.image}
+                  sizes="100vw"
+                  className="!aspect-square"
+                />
               </div>
             )}
           </Link>
