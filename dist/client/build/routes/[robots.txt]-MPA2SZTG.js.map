@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes/[robots.txt].jsx?browser"],
+  "sourcesContent": ["module.exports = {};"],
+  "mappings": "qDAAA,IAAAA,EAAAC,EAAA,CAAAC,EAAAC,IAAA,CAAAA,EAAO,QAAU,CAAC",
+  "names": ["require_robots_txt", "__commonJSMin", "exports", "module"]
+}

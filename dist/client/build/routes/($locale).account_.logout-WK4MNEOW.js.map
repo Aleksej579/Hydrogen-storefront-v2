@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/($locale).account_.logout.jsx"],
+  "sourcesContent": ["import {json, redirect} from '@shopify/remix-oxygen';\n\n/**\n * @type {MetaFunction}\n */\nexport const meta = () => {\n  return [{title: 'Logout'}];\n};\n\nexport async function loader() {\n  return redirect('/account/login');\n}\n\n/**\n * @param {ActionFunctionArgs}\n */\nexport async function action({request, context}) {\n  const {session} = context;\n  session.unset('customerAccessToken');\n\n  if (request.method !== 'POST') {\n    return json({error: 'Method not allowed'}, {status: 405});\n  }\n\n  return redirect('/', {\n    headers: {\n      'Set-Cookie': await session.commit(),\n    },\n  });\n}\n\nexport default function Logout() {\n  return null;\n}\n\n/** @typedef {import('@shopify/remix-oxygen').ActionFunctionArgs} ActionFunctionArgs */\n/** @template T @typedef {import('@remix-run/react').MetaFunction<T>} MetaFunction */\n/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */\n/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof action>} ActionReturnData */\n"],
+  "mappings": "yCAKO,IAAMA,EAAO,IACX,CAAC,CAAC,MAAO,QAAQ,CAAC,EAyBZ,SAARC,GAA0B,CAC/B,OAAO,IACT",
+  "names": ["meta", "Logout"]
+}
